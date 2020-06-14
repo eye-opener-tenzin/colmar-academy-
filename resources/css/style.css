@@ -232,16 +232,16 @@ button:hover{
 }
 
 #thesis h1 {
-    color: white;
+    color: #0a0909;
     text-align:  center;
     font-size: 32px;
-    padding-top: 32px;
+    padding: 32px;
 }
 
 .thesis{
     display: flex;
     padding: 0;
-    margin: 32px 24px;
+    margin: auto 24px;
 
 
 
@@ -250,7 +250,7 @@ button:hover{
 
 .thesis-video {
     width: 60%;
-    padding-right: 32px;
+    padding: 32px;
 
 }
 
@@ -263,7 +263,6 @@ button:hover{
 video{
     width: 100%;
 
-    
 
 }
 
@@ -335,6 +334,9 @@ footer{
     .campus-mobile {
         display: none;
     }
+    .learning-mobile{
+        display: none;
+    }
     }
 
     @media screen and (max-width: 790px){
@@ -344,6 +346,7 @@ footer{
         .logo {
             display: none;
         }
+
         .mobile{
             display: flex;
             justify-content: space-around;
@@ -361,9 +364,12 @@ footer{
         }
 
         .message {
-            padding: 32px 16px;
+                margin: 32px 36px;
+    
         
         }
+
+
 
         #practicing {
             display: none;
@@ -384,37 +390,33 @@ footer{
             width: 100%;
         }
 
-       .courses{
-           display: flex;
-           flex-direction: column;
-           width: 100%;
-       }
-        .course-img {
-            display: none;
-        }
-        .course h3{
-            display: none;
-        }
-         .course p{
-             display: none;
-         }
-        .course-info{
-            width: 100%;
-            background-color: 0;
+        #learning{
+            background: white;
+
+
         }
 
-        .course {
-            width: 60%;
-            padding: 0;
-            
+        .learning{
+            display: none;
+        
         }
+          
+        .learning-mobile h2 {
+            width: 80%;
+            background: grey;
+            margin: 20px auto;
+            padding: 16px 0 24px 16px;
          
-         
-         
+        }
 
-      .thesis-info, .thesis-text {
+        #thesis h1 {
+            padding: 32px 0 16px 0;
+        }
+        
+       .thesis-info, .thesis-text { 
           display: none;
       }
+
      .footer{
         display: none;
      }
