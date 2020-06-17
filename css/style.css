@@ -58,17 +58,15 @@ header {
 }
 
 /* learn or banner section*/
+
 #learn {
     display: flex;
     background: lightgry;
 }
 
-
- .banner {
+.banner {
      width: 60%;
      display: block;
-    
-
  }
 
  .banner img{
@@ -82,16 +80,11 @@ header {
     flex-flow: wrap column;
     justify-content: center;
     line-height: 90px;
-    margin-left: 24px;;
-
-    
-    
 }
 
 .message h2 {
     color: black;
     font-size: 56px;
-
 }
 
 .message h3 {
@@ -99,6 +92,7 @@ header {
     color: #000000;
     line-height: 40px;
 }
+
 button {
     padding: 8px;
     font-size: 20px;
@@ -106,14 +100,12 @@ button {
     background-color: #222329;
     border: none;
     color: whitesmoke;
-    
 }
 
 button:hover{
     background-color: #edf1f1 ;
     color: #000000;
     transition-delay: 500ms;
-    
 }
 
 
@@ -128,13 +120,10 @@ button:hover{
     border-right: 1px solid gray;
     width: 60%;
     padding: 32px 24px;
-
 }
 
 .practicing img{
     width: 100%;
-    
-   
 }
 
 
@@ -144,27 +133,38 @@ button:hover{
     font-size: 35px;
 }
 
-.practicing p{
+.practicing h3{
      font-size: 24px;
-     padding-bottom: 90px;
-     width: 100%;
+     padding-bottom: 32px;
+     opacity: 0.5;
+}
+
+p .quoted{
+    font-size: 18px;
+    opacity: 0.5;
 }
 
 
 
 /* campus from practicing section*/
+
 .campus{
     width: 40%;
     line-height: 40px;
+    margin: 32px 0;
 }
 
 .campus img {
-    margin: 32px;
+    margin: 16px;
+    width: 35%;
+}
+
+.orientaion img{
+    margin-top: 0;
 }
 .orientaion, .our-campus, .guest-lecture{
     display: flex;
     border-bottom: 1px solid grey;
-
 }
  
 .campus-info{
@@ -174,7 +174,6 @@ button:hover{
 .guest-lecture {
     background: gray;
     margin-bottom: 32px;;
-    
 }
 
 .campus-info a {
@@ -182,62 +181,60 @@ button:hover{
 }
 
 /* learning section*/
+
+
 #learning {
-
     background: lightgray;
-
-
 }
-#learning h2 {
 
+#learning h2 {
         font-size: 2rem;
         padding: 32px 0 16px 0;
         text-align: center;
-
 }
 
 .courses {
     display: flex;
     flex-wrap: wrap;
     justify-content:  space-around;
-    margin: 32px 100px;
+    margin: 32px 72px;
 }
 
 .course{
     background-color: white;
     margin: 16px;
     padding-bottom: 24px;
-    width: 30%;
-    
+    width: 30%;  
 }
+
 .course img{
     width: 100%;
 }
+
 .course-info{
-  padding: 16px 16px;
+  padding: 16px;
 }
 
 .course-info h3 {
     margin-top: 16px;
-   
 }
 
 .course-info h4{
     margin: 8px 0;
     text-transform: uppercase;
+    opacity: 0.5;
 }
 
 .course-info p{
     font-size: 20px;
+    opacity: 0.5;
 }
 
 /* thesis section*/
 
+
 #thesis{
     background-color: white;
-    
-
-
 }
 
 #thesis h2 {
@@ -251,41 +248,38 @@ button:hover{
     display: flex;
     padding: 0;
     margin: auto 24px;
-
-
-
-    
 }
 
 .thesis-video {
     width: 60%;
     padding: 32px;
-
 }
 
-.thesis-text {
+
+.thesis-text h3 {
     width: 100%;
     font-size: 25px;
-    padding: 24px 0;
+    padding: 24px 0 8px 0;
+}
+
+.thesis-text p{
+    opacity: 0.5;
 }
 
 video{
     width: 100%;
-
-
 }
 
 .thesis-info{
   width: 40%;
   padding: 32px 0;
-
-  
 }
 
 .fisma, .now-and-then{
     display: flex;
     padding: 0;
 }
+
 .fisma {
     background-color: gray;
 }
@@ -322,20 +316,15 @@ video{
 footer{
     display: flex;
     justify-content: space-between;
-    margin: auto 24px;
-
-    
+    margin: 16px 24px;
+    height: 64px; 
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-
-    
-}
 
 
 /* mobile responsive*/
+
+
 @media screen and (min-width: 790px ) {
     .mobile {
         display: none;
@@ -375,7 +364,6 @@ footer{
         .message {
                 margin: 32px 36px;
     
-        
         }
 
 
@@ -392,8 +380,7 @@ footer{
             display: flex;
             flex-direction: column;
             margin: 16px;
-    
-    
+
         }
         .campus-mobile img{
             width: 100%;
@@ -401,21 +388,17 @@ footer{
 
         #learning{
             background: white;
-
-
         }
 
         .learning{
             display: none;
-        
         }
           
-        .learning-mobile h2 {
+        .learning-mobile h3 {
             width: 80%;
             background: grey;
             margin: 20px auto;
             padding: 16px 0 24px 16px;
-         
         }
 
         #thesis h2 {
@@ -425,10 +408,11 @@ footer{
        .thesis-info, .thesis-text { 
           display: none;
       }
-
-     .footer{
+     
+      footer h5{
         display: none;
      }
+     
      video {
          width: 100%;
      }
